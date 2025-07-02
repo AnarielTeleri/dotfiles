@@ -14,4 +14,4 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply AnarielTeleri
 ## Steps
 
 Scripts will install [Homebrew](https://brew.sh) (and by extension the Command
-Line Tools if not present).
+Line Tools if not present) and any packages defined in .chezmoidata.toml.
