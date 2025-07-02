@@ -1,0 +1,28 @@
+[user]
+    name = {{ (onepasswordItemFields "Github").name.value }}
+    email = {{ (onepasswordItemFields "Github").email.value }}
+    signingKey = {{ (onepasswordDetailsFields "Signing Key").public_key.value }}
+[init]
+    defaultBranch = main
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed_signers
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
+[diff]
+    algorithm = histogram
+[pull]
+    ff = only
+[push]
+    autoSetupRemote = true
+[merge]
+    ff = only
+    conflictStyle = zdiff3
+[rerere]
+    enabled = true
+[url "git@github.com:"]
+    insteadOf = "https://github.com"
