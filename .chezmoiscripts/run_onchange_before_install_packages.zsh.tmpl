@@ -1,8 +1,6 @@
 #!/bin/zsh
 
-# Shell dotfiles may not be installed yet so we need to manually setup the
-# Homebrew settings.
-eval "$({{ .homebrew.binary }} shellenv)"
+{{ template "setup_homebrew" . }}
 
 # Install all the brews and casks defined in .chezmoidata.
 brew bundle --file=/dev/stdin <<EOF

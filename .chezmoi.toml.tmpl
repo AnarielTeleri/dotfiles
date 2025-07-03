@@ -1,9 +1,17 @@
 # Since Homebrew requires a different install location on Apple Silicon and
 # Intel we need to specify the location per machine. All this can be removed if
 # we don't need to support old Intel Macs.
+{{- $homebrew_dir := "" -}}
+{{ if eq .chezmoi.arch "amd64" -}}
+{{ $homebrew_dir = "/usr/local/bin" -}}
+{{ else -}}
+{{ $homebrew_dir = "/opt/homebrew/bin" -}}
+{{ end }}
+
+# 1Password can be invoked outside scripts and paths may not be setup correctly
+# so link directly to the binary.
+[onepassword]
+command = "{{ $homebrew_dir }}/op"
+
 [data.homebrew]
-{{- if eq .chezmoi.arch "amd64" }}
-binary = "/usr/local/bin/brew"
-{{- else }}
-binary = "/opt/homebrew/bin/brew"
-{{- end -}}
+binary = "{{ $homebrew_dir }}/brew"
