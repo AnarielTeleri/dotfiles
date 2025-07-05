@@ -1,3 +1,3 @@
 [homebrew]
-brews = ["chezmoi", "fish", "git", "openssh"]
+brews = ["chezmoi", "choose-rust", "fish", "git", "openssh", "ripgrep"]
 casks = ["1password", "1password-cli", "kitty"]
