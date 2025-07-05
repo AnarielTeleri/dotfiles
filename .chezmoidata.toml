@@ -1,3 +1,11 @@
+[fisher]
+plugins = [
+    "catppuccin/fish",
+    "jhillyerd/plugin-git",
+    "jorgebucaran/autopair.fish",
+    "jorgebucaran/fisher",
+]
+
 [homebrew]
 brews = ["chezmoi", "choose-rust", "fish", "git", "openssh", "ripgrep"]
 casks = ["1password", "1password-cli", "kitty"]
