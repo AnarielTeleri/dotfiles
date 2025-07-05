@@ -20,3 +20,6 @@ and setup it and the CLI, though manual enabling in 1Password is required.
 
 Following this any dotfiles will be copied (or templates instantiated) into the
 appropriate directories under $HOME.
+
+[Kitty](https://sw.kovidgoyal.net/kitty/) is used as the terminal along with
+[Maple Mono](https://font.subf.dev/en/) as the font.
