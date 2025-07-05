@@ -1,3 +1,9 @@
 [homebrew]
 brews = ["chezmoi", "git", "openssh"]
-casks = ["1password", "1password-cli"]
+casks = [
+    "1password",
+    "1password-cli",
+    "font-maple-mono",
+    "font-symbols-only-nerd-font",
+    "kitty",
+]

@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+kitten themes --dump-theme Catppuccin-Mocha > \
+    {{ joinPath .chezmoi.homeDir ".config/kitty/current-theme.conf" }}
