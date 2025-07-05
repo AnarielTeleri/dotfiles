@@ -22,4 +22,5 @@ Following this any dotfiles will be copied (or templates instantiated) into the
 appropriate directories under $HOME.
 
 [Kitty](https://sw.kovidgoyal.net/kitty/) is used as the terminal along with
-[Maple Mono](https://font.subf.dev/en/) as the font.
+[Maple Mono](https://font.subf.dev/en/) as the font and
+[Fish](https://fishshell.com) as the shell.
