@@ -13,9 +13,12 @@ brews = [
     "choose-rust",
     "fish",
     "git",
+    "lsd",
     "openssh",
     "ripgrep",
+    "sd",
     "starship",
+    "vivid",
 ]
 casks = [
     "1password",
