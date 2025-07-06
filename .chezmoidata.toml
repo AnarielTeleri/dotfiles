@@ -7,7 +7,15 @@ plugins = [
 ]
 
 [homebrew]
-brews = ["chezmoi", "choose-rust", "fish", "git", "openssh", "ripgrep"]
+brews = [
+    "chezmoi",
+    "choose-rust",
+    "fish",
+    "git",
+    "openssh",
+    "ripgrep",
+    "starship",
+]
 casks = [
     "1password",
     "1password-cli",
