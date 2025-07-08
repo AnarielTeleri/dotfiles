@@ -1,0 +1,13 @@
+#!{{ .fish.binary }}
+
+{{ $mocha := joinPath .chezmoi.homeDir
+".config/fzf/catppuccin-fzf-mocha.fish" -}}
+# Modify the default Catppuccin Fzf to use a global variable instead of a
+# universal one, add our own options and a keybind for searching directories.
+# Store a hash to rerun this if the external file gets updated.
+# Hash: {{ include $mocha | sha256sum }}
+bat {{ $mocha }} | sd "set -Ux" "set -gx" | sd "\"\$" """ \\
+--multi --cycle\"
+
+fzf_configure_bindings --directory=\cf""" >{{ joinPath .chezmoi.homeDir
+".config/fish/conf.d/fzf.fish" }}

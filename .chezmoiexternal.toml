@@ -4,6 +4,12 @@ url = """https://raw.githubusercontent.com/catppuccin/bat/refs/heads\
 /main/themes/Catppuccin Mocha.tmTheme"""
 refreshPeriod = "168h"
 
+[".config/fzf/catppuccin-fzf-mocha.fish"]
+type = "file"
+url = """https://raw.githubusercontent.com/catppuccin/fzf/refs/heads\
+/main/themes/catppuccin-fzf-mocha.fish"""
+refreshPeriod = "168h"
+
 [".config/lsd/colors.yaml"]
 type = "file"
 url = """https://raw.githubusercontent.com/catppuccin/lsd/refs/heads\
