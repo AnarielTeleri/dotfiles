@@ -21,6 +21,7 @@ brews = [
     "sd",
     "starship",
     "vivid",
+    "zoxide",
 ]
 casks = [
     "1password",
