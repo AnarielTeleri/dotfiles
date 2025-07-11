@@ -26,6 +26,7 @@ brews = [
 casks = [
     "1password",
     "1password-cli",
+    "bettertouchtool",
     "font-maple-mono",
     "font-symbols-only-nerd-font",
     "kitty",

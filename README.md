@@ -24,3 +24,7 @@ appropriate directories under $HOME.
 [Kitty](https://sw.kovidgoyal.net/kitty/) is used as the terminal along with
 [Maple Mono](https://font.subf.dev/en/) as the font and
 [Fish](https://fishshell.com) as the shell.
+
+[BetterTouchTool](https://folivora.ai) is installed but there isn't a good way
+to programaticly install a preset, instead just store it in `data/` and
+import it manually later.
