@@ -1,0 +1,16 @@
+#!{{ .fish.binary }} -N
+# Sourcing env.fish before rust is installed will cause errors so we want to run
+# this script near the beginning and do so without sourcing our scripts.
+
+if not command -v rustup >/dev/null
+    sudo mkdir /opt/rust
+    sudo chown megan:admin /opt/rust
+
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs \
+        | sh -s -- --no-modify-path -y
+
+    source "/opt/rust/cargo/env.fish"
+
+    rustup toolchain install nightly
+    rustup component add rust-analyzer
+end
