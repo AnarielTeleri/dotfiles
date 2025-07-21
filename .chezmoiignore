@@ -1,0 +1,3 @@
+# Main repository files we don't actually want to be synced.
+LICENSE
+README.md
