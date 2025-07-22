@@ -1,0 +1,4 @@
+[homebrew]
+brews = ["choose-rust", "fd", "ripgrep", "sd"]
+
+casks = ["1password", "discord"]

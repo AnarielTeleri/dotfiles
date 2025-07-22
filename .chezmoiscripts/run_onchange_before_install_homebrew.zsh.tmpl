@@ -1,0 +1,26 @@
+#!/usr/bin/env zsh
+
+# Install Homebrew if we can't locate the brew command, even if it does exist
+# already running again doesn't cause any issues.
+if ! command -v brew >/dev/null; then
+    echo "Installing Homebrew."
+
+    /bin/bash -c "$(curl -fsSL \
+        https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+eval "$({{ .homebrew.binary }} shellenv)"
+
+echo "Installing Homebrew packages."
+
+# Generate a brew bundle file from the list of homebrew brews and casks.
+brew bundle --file=/dev/stdin <<EOF
+{{ range .homebrew.brews -}}
+brew {{ . | quote }}
+{{ end -}}
+
+cask_args adopt: true
+{{ range .homebrew.casks -}}
+cask {{ . | quote }}
+{{ end -}}
+EOF

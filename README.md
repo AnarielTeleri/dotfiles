@@ -11,4 +11,6 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply AnarielTeleri
 ## Process
 
 In addition to syncing the dotfiles in the correct locations, Chezmoi will
-bootstrap the Command Line Tools if needed.
+bootstrap the Command Line Tools if needed. [Homebrew](https://brew.sh) will be
+installed and any brews or casks listed in `.chezmoidata.toml` will also be
+installed.
