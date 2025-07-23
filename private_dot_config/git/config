@@ -1,0 +1,28 @@
+[user]
+    name = Anariel Teleri
+    email = 218691229+AnarielTeleri@users.noreply.github.com
+    signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJOpQ6ESTxmy9s6hjSitqmj8UpNAM9DsBXxIhdSLC4zv
+[init]
+    defaultBranch = main
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    allowedSignersFile = ~/.config/git/allowed_signers
+    program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+    gpgSign = true
+[tag]
+    gpgSign = true
+[diff]
+    algorithm = histogram
+[pull]
+    ff = only
+[push]
+    autoSetupRemote = true
+[merge]
+    ff = only
+    conflictStyle = zdiff3
+[rerere]
+    enabled = true
+[url "git@github.com:AnarielTeleri"]
+    insteadOf = "https://github.com/AnarielTeleri"
