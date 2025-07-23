@@ -16,7 +16,8 @@ bootstrap the Command Line Tools if needed and install
 
 The terminal is [Kitty](https://sw.kovidgoyal.net/kitty/) using
 [Maple Mono](https://font.subf.dev/en/) as the font and
-[Fish](https://fishshell.com) as the shell.
+[Fish](https://fishshell.com) as the shell with [Starship](https://starship.rs)
+providing the prompt.
 
 ### Packages
 

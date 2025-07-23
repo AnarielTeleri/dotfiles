@@ -16,6 +16,7 @@ brews = [
     "openssh",
     "ripgrep",
     "sd",
+    "starship",
 ]
 
 casks = [
