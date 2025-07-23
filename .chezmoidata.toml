@@ -14,10 +14,12 @@ brews = [
     "fd",
     "fish",
     "git",
+    "lsd",
     "openssh",
     "ripgrep",
     "sd",
     "starship",
+    "vivid",
 ]
 
 casks = [
