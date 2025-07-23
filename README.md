@@ -16,4 +16,5 @@ installed and any brews or casks listed in `.chezmoidata.toml` will also be
 installed.
 
 The terminal is [Kitty](https://sw.kovidgoyal.net/kitty/) using
-[Maple Mono](https://font.subf.dev/en/) as the font.
+[Maple Mono](https://font.subf.dev/en/) as the font and
+[Fish](https://fishshell.com) as the shell.
