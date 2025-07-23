@@ -1,4 +1,10 @@
 [homebrew]
 brews = ["chezmoi", "choose-rust", "fd", "git", "openssh", "ripgrep", "sd"]
 
-casks = ["1password", "discord"]
+casks = [
+    "1password",
+    "discord",
+    "font-maple-mono",
+    "font-symbols-only-nerd-font",
+    "kitty",
+]
