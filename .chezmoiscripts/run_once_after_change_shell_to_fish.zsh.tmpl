@@ -1,0 +1,19 @@
+#!/usr/bin/env zsh
+
+# Load homebrew environment.
+eval "$({{ .homebrew.binary }} shellenv)"
+
+# We can't change the shell unless the full path to the shell is already in
+# /etc/shells so we need to add it there.
+if ! rg -q {{ .fish.binary }} /etc/shells; then
+    echo "Adding {{ .fish.binary }} to /etc/shells."
+
+    echo {{ .fish.binary }} | sudo tee -a /etc/shells >/dev/null
+fi
+
+# Check if the user's shell is set to Fish and change it if it isn't.
+if [[ $(dscl . -read ~/ UserShell | choose 1) != {{ .fish.binary }} ]]; then
+    echo "Setting user shell to {{ .fish.binary }}."
+
+    chsh -s {{ .fish.binary }}
+fi
