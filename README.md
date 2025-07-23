@@ -11,10 +11,15 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply AnarielTeleri
 ## Process
 
 In addition to syncing the dotfiles in the correct locations, Chezmoi will
-bootstrap the Command Line Tools if needed. [Homebrew](https://brew.sh) will be
-installed and any brews or casks listed in `.chezmoidata.toml` will also be
-installed.
+bootstrap the Command Line Tools if needed and install
+[Homebrew](https://brew.sh).
 
 The terminal is [Kitty](https://sw.kovidgoyal.net/kitty/) using
 [Maple Mono](https://font.subf.dev/en/) as the font and
 [Fish](https://fishshell.com) as the shell.
+
+### Packages
+
+Within `.chezmoidata.toml` are the lists of brews and casks to be installed by
+Homebrew as well as the plugins to be installed by
+[Fisher](https://github.com/jorgebucaran/fisher).
