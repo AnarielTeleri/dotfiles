@@ -24,3 +24,6 @@ providing the prompt.
 Within `.chezmoidata.toml` are the lists of brews and casks to be installed by
 Homebrew as well as the plugins to be installed by
 [Fisher](https://github.com/jorgebucaran/fisher).
+
+[Better Touch Tool](https://folivora.ai) is installed but the present need to be
+manually imported from `data/bettertouchtool/`.

@@ -1,3 +1,4 @@
 # Main repository files we don't actually want to be synced.
+data/
 LICENSE
 README.md

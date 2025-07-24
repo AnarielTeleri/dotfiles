@@ -27,6 +27,7 @@ brews = [
 
 casks = [
     "1password",
+    "bettertouchtool",
     "discord",
     "font-maple-mono",
     "font-symbols-only-nerd-font",
